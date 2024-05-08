@@ -16,8 +16,16 @@ body:
           required: true
         - label: Are you posting in the right repository ?
           required: true
-        - label: Is the issue report detailed with version numbers
-          required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
@@ -47,10 +55,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting this issue! We will get back to you as soon as possible.
-  - type: markdown
-    attributes:
-      value: |
-        **Note:** Please note that you have to fill required fields to post a Issue.
-        If not please close or redo the issue and join our slack channel wg-manifests here https://www.kubeflow.org/docs/about/community/. This link also contains our meeting schedule.
-        Thank you for your contribution.
+        > **Note:** Please note that you have to fill required fields to post an Issue.
+          If not please close or redo the issue and join our slack channel [wg-manifests](https://www.kubeflow.org/docs/about/community/) here. This link also contains our meeting schedule. 
+
+        **Thanks for reporting this issue! We will get back to you as soon as possible.** 
