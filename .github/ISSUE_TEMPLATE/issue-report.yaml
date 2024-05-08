@@ -8,6 +8,7 @@ body:
   - type: checkboxes
     id: Vaildation
     attributes:
+      label: Validation Checklist
       options:
         - label: Is this a Kubeflow issue?
           required: true
