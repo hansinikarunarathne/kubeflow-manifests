@@ -1,0 +1,55 @@
+name: Issue Report
+description: Report a Issue
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hello, Please fill out the sections below to help everyone identify and fix the bug
+  - type: checkboxes
+    id: Vaildation
+    attributes:
+      options:
+        - label: Is this a Kubeflow issue?
+          required: true
+        - label: Is this for Kubeflow development ?
+          required: true
+        - label: Are you posting in the right repository ?
+          required: true
+        - label: Is the issue report detailed with version numbers
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your issue
+      placeholder: When I Procced this issue is occured. 
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce the issue
+      placeholder: |
+        1. Try this ...
+        2. Then do this ...
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Put here any screenshots or videos (optional)
+  - type: dropdown
+    id: assign
+    attributes:
+      label: "Would you like to work on this issue?"
+      options:
+        - "Yes"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this issue! We will get back to you as soon as possible.
+  - type: markdown
+    attributes:
+      value: |
+        **Note:** Please note that you have to fill required fields to post a Issue.
+        If not please close or redo the issue and join our slack channel wg-manifests here https://www.kubeflow.org/docs/about/community/. This link also contains our meeting schedule.
+        Thank you for your contribution.
