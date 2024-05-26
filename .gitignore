@@ -11,3 +11,6 @@
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
 [._]sw[a-p]
+
+# Security Scan Reports
+docs/image_lists/security_scan_reports
